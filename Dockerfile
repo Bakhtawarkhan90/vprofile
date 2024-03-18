@@ -4,7 +4,7 @@ RUN apt update && apt install maven -y
 
 RUN git clone https://github.com/Bakhtawarkhan90/vprofile.git
 
-RUN cd vprofile-project  && mvn install
+RUN cd vprofile && mvn install
 
 FROM tomcat:9-jre11
 
